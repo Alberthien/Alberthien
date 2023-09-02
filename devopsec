@@ -11,8 +11,8 @@ pipeline {
     }
     stage('CompileandRunSonarAnalysis') {
             steps {	
-		sh 'mvn -Dmaven.test.failure.ignore verify sonar:sonar -Dsonar.projectKey=devopsec6_devopsec
--Dsonar.organization=devopsec -Dsonar.host.url=https://sonarcloud.io -Dsonar.login=619c4eb9416b70a5c53d275f7c8f80938b4e878b'
+		sh 'mvn -Dmaven.test.failure.ignore verify sonar:sonar -Dsonar.projectKey=devopsec6_devopsec -Dsonar.organization=devopsec -Dsonar.host.url=https://sonarcloud.io -Dsonar.login=619c4eb9416b70a5c53d275f7c8f80938b4e878b'
+
 			}
         } 
   }
